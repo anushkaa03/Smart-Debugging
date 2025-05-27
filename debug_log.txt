@@ -1,0 +1,17 @@
+Line 1: Analyzing code: int calculateSquare(int number) {
+Line 2: Analyzing code:     int result;  // ?? Declared but not initialized
+[Warning] Variable declared without initialization.
+Line 3: Analyzing code:     if (number > 0) {
+Line 4: Analyzing code:         result = number * number;
+Line 5: Analyzing code:     }
+Line 6: Analyzing code:     // Missing else     return result;  // ?? May return garbage if number <= 0
+Line 7: Analyzing code: }
+Line 8: Analyzing code: 
+Line 9: Analyzing code: int main() {
+Line 10: Analyzing code:     int num = -3;
+Line 11: Analyzing code:     int square = calculateSquare(num);  // Bug may occur here
+Line 12: Analyzing code:     std::cout << "Square: " << square << std::endl;
+Line 13: Analyzing code:     return 0;
+Line 14: Analyzing code: }END
+Running debugging tools...
+Debugging completed.
