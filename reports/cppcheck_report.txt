@@ -1,0 +1,8 @@
+/mnt/c/Users/Amisha panwar/smart-debugger/Smart-Debugging/test/sample.cpp:1:0: information: Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <iostream>
+^
+/mnt/c/Users/Amisha panwar/smart-debugger/Smart-Debugging/test/sample.cpp:8:5: error: Memory leak: arr [memleak]
+    return 0;  // missing delete[] arr
+    ^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+
